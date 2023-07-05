@@ -1,0 +1,91 @@
+#header-main {
+
+
+    #overlay {
+
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: gold;
+        opacity: .5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+        transform: translate(-100%, 0);
+
+        &.open {
+            transform: translate(0, 0)
+        }
+
+        &.close {
+            transform: translate(-100%, 0)
+        }
+
+        .content {
+            position: relative;
+            z-index: 3;
+        }
+
+
+
+        .header {
+            color: black;
+            font-size: 4rem;
+            margin-top: 1rem;
+            font-weight: bold;
+
+
+
+            &.hidden {
+                display: none;
+            }
+
+        }
+
+
+    }
+
+    .menu-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        cursor: pointer;
+
+        .btn-line {
+            width: 55px;
+            height: 6px;
+            background: white;
+            margin: .3rem;
+            transition: all .2s ease-in;
+        }
+
+        &.rotat {
+            transform: rotate(180deg);
+
+            .btn-line {
+
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(4px, 4px)
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(4px, -4px)
+                }
+
+            }
+        }
+    }
+
+
+}

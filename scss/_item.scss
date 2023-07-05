@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Acme");
+
+.list {
+  display: none;
+  transition: all 1s ease;
+
+  li {
+    transition: all 1s ease;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.item {
+  position: relative;
+  background: gold;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .item-text-title {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    font-family: "Acme", sans-serif;
+    transition: all 0.7s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    display: block;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+    transition: all 1s ease-in-out;
+  }
+
+  .item-image {
+    overflow: hidden;
+    position: relative;
+    margin-top: -1rem;
+
+    img {
+
+      width: 100%;
+      height: 100%;
+      transition: all 0.7s ease-in-out;
+    }
+  }
+
+  &:hover:after {
+    transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+  }
+
+  &:hover .item-text-title {
+    display: none;
+  }
+
+  &:hover {
+    .tools {
+      display: none;
+      transition: all 1s ease;
+    }
+
+    .list {
+      display: block;
+
+      ul {
+        display: flex;
+
+        li a {
+          color: white;
+          margin: 1rem;
+          transition: all 1s ease;
+        }
+      }
+    }
+  }
+
+  &:hover &-image {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+  }
+
+  &:hover &-text {
+    transition: all 1s ease-in;
+    position: absolute;
+    z-index: 99;
+    color: white;
+  }
+}
+
+@media (max-width: 850px) {
+  .items {
+    grid-template-columns: 1fr 1fr;
+  }
+}

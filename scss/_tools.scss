@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+
+// Buttons
+
+%btn-shared {
+    display: inline-block;
+    padding: .8rem 2rem;
+    transition: all .5s;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: black;
+        background-color: $main-color;
+    }
+
+    &-light {
+        @extend %btn-shared;
+        color: #333;
+        background-color: $l-color;
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        color: #f4f4f4;
+        background-color: $d-color;
+    }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    background-color: $main-color
+}
+
+#logo {
+    font-size: 3.4rem;
+    font-family: 'Courgette', cursive;
+
+}
+
+// backgrounds
+
+.bg {
+    &-main {
+        background: $main-color;
+        color: set-text-color($main-color)
+    }
+
+    &-d {
+        background: $d-color;
+        color: set-text-color($d-color)
+    }
+
+    &-l {
+        background: $l-color;
+        color: set-text-color($l-color)
+    }
+
+    &-m {
+        background: $m-color;
+        color: set-text-color($m-color)
+    }
+}
+
+.leader {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py {
+    &-1 {
+        padding: 1rem 0rem;
+    }
+
+    &-2 {
+        padding: 2rem 0rem;
+    }
+
+    &-3 {
+        padding: 3rem 0rem;
+    }
+
+    &-4 {
+        padding: 4rem 0rem;
+    }
+}
+
+.my {
+    &-1 {
+        margin: 1rem 0rem;
+    }
+
+    &-2 {
+        margin: 2rem 0rem;
+    }
+
+    &-3 {
+        margin: 3rem 0rem;
+    }
+
+    &-4 {
+        margin: 4rem 0rem;
+    }
+}
+
+.section-title {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 7rem;
+    background-color: $main-color;
+    margin: .5rem auto 1rem auto
+}

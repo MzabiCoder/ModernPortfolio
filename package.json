@@ -1,0 +1,20 @@
+{
+  "name": "portfolio_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "hompepage": "https://mzabicoder.github.io/myportfolio",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^9.0.0",
+    "particlesjs": "^2.2.3",
+    "react-scripts": "^5.0.1"
+  }
+}

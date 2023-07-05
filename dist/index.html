@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/jpg" href="./img/face2.jpeg" />
+    <title>MyPortfolio</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC|Oxygen&display=swap");
+
+    .animated {
+      /* font-family: 'Poppins', sans-serif; */
+      /* font-family: 'Noto Sans TC', sans-serif; */
+      font-family: "Noto Sans TC", sans-serif;
+      font-family: "Oxygen", sans-serif;
+
+      font-size: 6rem;
+      margin: 0;
+      padding: 0;
+      background: url("https://images1.pixlis.com/background-image-horizontal-lines-and-stripes-seamless-tileable-red-white-22hnpp.png")
+        no-repeat center center / cover;
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: move 10s linear infinite;
+      -webkit-animation: move 10s linear infinite;
+    }
+
+    @keyframes move {
+      0% {
+        background-position: 0% 70%;
+      }
+
+      100% {
+        background-position: 90% 90%;
+      }
+    }
+
+    .test {
+      display: block;
+      margin: 1rem auto;
+      background: none;
+      border: 1px solid #fff;
+      width: 30%;
+      padding: 0.6rem 0.7rem;
+      transition: all 0.6 linear;
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .test:hover {
+      color: #000;
+    }
+
+    .test::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: -1;
+      transform: scaleX(0);
+      transition: all 0.5s;
+    }
+
+    .test:hover::before {
+      transform: scaleX(1);
+    }
+
+    .landing {
+      padding: 0;
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: bold;
+      display: block !important;
+    }
+
+    .loading:after {
+      content: "\2026";
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: bottom;
+      animation: dots steps(4, end) 2s infinite;
+      width: 0;
+    }
+
+    .loading {
+      font-size: 3rem;
+      font-family: "Luckiest Guy", cursive;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+
+    @keyframes dots {
+      to {
+        width: 3rem;
+      }
+    }
+
+    .fade {
+      opacity: 0;
+    }
+
+     
+  </style>
+
+  <body>
+    <!-- <div id="splash">
+        <h1 class="loading">loading</h1>
+    </div> -->
+
+    <header class="header" id="header-main">
+      <!-- <div class="menu-button"> <div class="btn-line"></div> <div class="btn-line"></div> <div class="btn-line"></div> </div> -->
+      <!-- <div id="overlay"> <div class="content"> <a href=""> <h1 class="header"> Home</h1> </a> <a href=""> <h1 class="header"> Home</h1> </a> <a href=""> <h1 class="header"> Home</h1> </a> <a href=""> <h1 class="header"> Home</h1> </a> </div> </div> -->
+      <div class="container">
+        <nav id="one-nav">
+          <h2 id="logo">NF</h2>
+          <ul>
+            <li><a href="index.html" class="current">Homenabil</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="work.html">work</a></li> -->
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1 class="animated">Hi,Im Nabil Fannane</h1>
+          <p class="leader">
+            <strong>I design & build user interfaces</strong>
+          </p>
+          <!-- <a href="#work-a" class="btn-light">view my work</a> -->
+          <a href="#work-a" class="test">view my work</a>
+        </div>
+      </div>
+    </header>
+    <section id="work-a" class="text-center py-3 my-4">
+      <div class="container">
+        <h2 class="section-title">My work</h2>
+        <div class="bottom-line"></div>
+        <div class="items py-3">
+         
+
+          <!-- <div class="item one">
+                    <div class="item-image"> <img src="img/car.jpeg" alt=""> </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <div class="list">
+                                <ul>
+                                    <li> <a href="https://github.com/MzabiCoder/car_dealership" target="_blank"> <i
+                                                class="fab fa-github fa-3x"></i></a></li>
+                                    <li> <a href="https://dealership.netlify.com/" target="_blank"><i
+                                                class="fas fa-eye fa-3x"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="item-text-title">bootstrap / css3 / html5 / javascript / jquey</p>
+                        </div>
+                    </div>
+                </div> -->
+          <!-- <div class="item one">
+          <div class="item-image"><img src="img/suhi2.jpg" alt="" /></div>
+          <div class="item-text">
+            <div class="item-text-wrap">
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="https://github.com/MzabiCoder/Mama_Sushi" target="_blank">
+                      <i class="fab fa-github fa-3x"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://sushimama.netlify.com/?#special" target="_blank"><i
+                        class="fas fa-eye fa-3x"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <p class="item-text-title">
+                bootstrap / css3 / html5 / javascript / jquey
+                <span class="landing">LandingPage</span>
+              </p>
+            </div>
+          </div>
+        </div> -->
+          <div class="item one">
+            <div class="item-image">
+              <img
+                src="https://images.pexels.com/photos/33265/wine-bottle-wine-glasses-wine-ambience.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <div class="list">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/MzabiCoder/winerie"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://mzabicoder.github.io/winerie/"
+                        target="_blank"
+                        ><i class="fas fa-eye fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="item-text-title">
+                  html5 / sass /grid /flexbox/ javascript
+                  <span class="landing">Winerie website</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item tow">
+            <div class="item-image">
+              <img
+                src="https://images.pexels.com/photos/2102934/pexels-photo-2102934.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <div class="list">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/MzabiCoder/ComptoirRestaurant"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://mzabicoder.github.io/ComptoirRestaurant/ "
+                        target="_blank"
+                        ><i class="fas fa-eye fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="item-text-title">
+                  html5 /grid / flexbox /sass/ javascript
+                  <span class="landing">Full Business Website</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item one">
+            <div class="item-image">
+              <img
+                src="https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <div class="list">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/MzabiCoder/mikisteakhouse_business"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://mzabicoder.github.io/mikisteakhouse_business/"
+                        target="_blank"
+                        ><i class="fas fa-eye fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <p class="item-text-title">
+                  html5 / sass /grid /flexbox/ javascript
+                  <span class="landing">Full Business Website</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="item one ">
+            <div class="item-image">
+              <img
+                src="https://images.pexels.com/photos/225250/pexels-photo-225250.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <div class="list">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/MzabiCoder/Pagination-ReactInfinteScroll-VanillaJS-"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://mzabicoder.github.io/Pagination-ReactInfinteScroll-VanillaJS-/"
+                        target="_blank"
+                        ><i class="fas fa-eye fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <p class="item-text-title">
+                  Star Wars API / React-Infinite-Scroll / Javascript
+                  <span class="landing">Pagination examples</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="item tow">
+            <div class="item-image"><img src="img/phone.jpeg" alt="" /></div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <div class="list">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/MzabiCoder/E-commerce"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://shopping-cart1.netlify.com/"
+                        target="_blank"
+                        ><i class="fas fa-eye fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="item-text-title">
+                  PhoneStore : react / contextAPI / styled-components
+                </p>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="item tow">
+                    <div class="item-image"> <img src="img/cart.jpeg" alt=""> </div>
+                    <div class=" item-text">
+                        <div class="item-text-wrap">
+                            <div class="list">
+                                <ul>
+                                    <li> <a href="https://github.com/MzabiCoder/List_Shopping_list_react_redux_node"
+                                            target="_blank"> <i class="fab fa-github fa-3x"></i></a></li>
+                                    <li> <a href="https://frozen-cliffs-81945.herokuapp.com" target="_blank"><i
+                                                class="fas fa-eye fa-3x"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <p class="item-text-title">(todoApp) react-starp / redux / mongodb / nodejs</p>
+                        </div>
+                    </div>
+                </div> -->
+          <!-- <div class="item tow">
+            <div class="item-image">
+              <img
+                src="https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <div class="list">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/MzabiCoder/Social_Network_MERN_STACK"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://fierce-brushlands-10198.herokuapp.com/"
+                        target="_blank"
+                        ><i class="fas fa-eye fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="item-text-title">
+                  React/MongoDB/NodeJS/Express
+                  <span class="landing"> MERN(Redux)</span>
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="item one ">
+            <div class="item-image">
+              <img
+                src="https://images.pexels.com/photos/4050287/pexels-photo-4050287.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <div class="list">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/MzabiCoder/TeamTrucker"
+                        target="_blank"
+                      >
+                        <i class="fab fa-github fa-3x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://glacial-chamber-21040.herokuapp.com/login"
+                        target="_blank"
+                        ><i class="fas fa-eye fa-3x"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="item-text-title">
+                  React/MongoDB/Node/Express
+                  <span class="landing">Team Trucker MERN</span>
+                  <span class="landing">(ContextAPI)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <div class="item one">
+                    <div class="item-image"> <img src="img/candy.jpeg" alt=""> </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <div class="list">
+                                <ul>
+                                    <li> <a href="https://github.com/MzabiCoder/Mom_Cake_store" target="_blank"> <i
+                                                class="fab fa-github fa-3x"></i></a></li>
+                                    <li> <a href="https://grandpas.netlify.com/" target="_blank"><i
+                                                class="fas fa-eye fa-3x"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="item-text-title">bootstrap / css3 / html5 / javascript / jquey</p>
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+      </div>
+    </section>
+    <footer id="main-footer" class="py-2">
+      <div class="footer-content container py-1">
+        <p>Copyright &copy; 2020.ALL RIGHT RESERVED</p>
+        <div class="social py-1">
+          <a href="https://www.facebook.com/nabil.fannane.9" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://github.com/MzabiCoder" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nabil-fannane-34828741/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script> particlesJS.load('header-main', 'header-main.json', function () { // console.log('callback - particles-js config loaded'); }); </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"></script>
+    <script>
+      setTimeout(() => {
+        document.querySelector("#splash").classList.add("fade");
+        document.querySelector(".loading").classList.add("fade");
+      }, 4000);
+      window.sr = ScrollReveal();
+
+      sr.reveal(".header-content", {
+        duration: 2000,
+        origin: "top",
+        distance: "600px",
+      });
+      sr.reveal(".items", {
+        duration: 3000,
+        origin: "left",
+      });
+
+      const tl = new TimelineLite();
+
+      tl.fromTo(
+        header,
+        0.6,
+        {
+          height: "0%",
+        },
+        {
+          height: "80%",
+          ease: "Power2.easeInOut",
+        }
+      )
+        .fromTo(
+          hero,
+          0.6,
+          {
+            width: "100%",
+          },
+          {
+            width: "80%",
+            ease: "Power2.easeInOut",
+          }
+        )
+        .fromTo(
+          headlin,
+          0.6,
+          {
+            opacity: "0",
+          },
+          {
+            opacity: "1",
+            ease: "Power2.easeInOut",
+          }
+        )
+
+        .fromTo(
+          slider,
+          0.6,
+          {
+            x: "-100%",
+          },
+          {
+            x: "0%",
+            ease: "Power2.easeInOut",
+          }
+        );
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
