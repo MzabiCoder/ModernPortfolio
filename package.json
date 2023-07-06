@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "hompepage": "https://mzabicoder.github.io/myportfolio",
+  "hompepage": "https://MzabiCoder.github.io/ModernPortfolio",
   "dependencies": {
     "gh-pages": "^2.2.0",
     "node-sass": "^9.0.0",

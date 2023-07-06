@@ -576,7 +576,8 @@ img {
 #about-a .about-info {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'bioimage bi bi' 'aw1 aw2 aw3';
+      grid-template-areas: 'bioimage bi bi'
+ 'aw1 aw2 aw3';
   grid-gap: 1rem;
 }
 
@@ -722,7 +723,9 @@ img {
 #contact-a .text-fields {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'name email' 'subject phone' 'message message';
+      grid-template-areas: 'name email'
+ 'subject phone'
+ 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -889,13 +892,19 @@ img {
     padding: 1rem;
   }
   #about-a .about-info {
-        grid-template-areas: 'bioimage bioimage bioimage' 'bi bi bi' 'aw1 aw2 aw3';
+        grid-template-areas: 'bioimage bioimage bioimage'
+ 'bi bi bi'
+ 'aw1 aw2 aw3';
   }
   #about-c {
     display: none;
   }
   #contact-a .text-fields {
-        grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
+        grid-template-areas: 'name'
+ 'subject'
+ 'email'
+ 'phone'
+ 'message';
   }
   #contact-b .contact-info div {
     padding: 1rem;
