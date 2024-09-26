@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" type="image/jpg" href="./img/face2.jpeg" />
     <!-- Google Tag Manager -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -282,11 +283,17 @@ background: black;
       <div class="container">
         <nav id="one-nav">
           <h2 id="logo">NF</h2>
-          <!-- <ul>
-            <li><a href="index.html" class="current">Home</a></li>
+          <ul>
+            <!-- <li><a href="index.html" class="current">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul> -->
+            <li><a href="about.html">Projects</a></li>
+            <li><a href="contact.html">contact</a></li> -->
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work-a">Projects</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
         </nav>
         <div class="header-content">
           <h1 class="animated">Hi,Im Nabil Fannane</h1>
@@ -532,6 +539,36 @@ background: black;
         </div>
       </div>
     </section>
+
+    <div id="contact">
+      <div class="container center">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fas fa-paper-plane"></i> mzabi30@gmail.com</p>
+                  <p style="margin-right: 1rem;"><i class="fa-solid fa-phone"></i> 4155747713</p>
+                  <div class="social-icons" style="margin-top: 15px; margin-bottom: 1rem;">
+                       <a style="color: gold;" target="_blank" href="https://www.linkedin.com/in/nabil-fannane-34828741/"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                  <a href="img/NabilResumeNabil.pdf" style="padding: .5rem; font-weight: bold; font-size: 18px;"  download class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-down">
+                  <form method="post" action="post" name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="copyright">
+          <p>Copyright © Nabil Fannane.</p>
+      </div> -->
+  </div>
+
+
     <footer id="main-footer" class="py-2">
       <div class="footer-content container py-1">
         <p>Copyright &copy; 2020.ALL RIGHT RESERVED</p>
@@ -581,6 +618,12 @@ background: black;
       sr.reveal("#image", {
         duration: 1700,
         origin: "left",
+        distance: "600px",
+      });
+
+      sr.reveal("#contact .container .row", {
+        duration: 1700,
+        origin: "bottom",
         distance: "600px",
       });
 
@@ -652,6 +695,23 @@ background: black;
         offset:400,
         duration:900
       });
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxhttqLzBaKxWgmVj_pRrh8QzvzpC5MZmJ940uu5-AEWKhjK0r0Rpevm9-WL_2kcToI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
     </script>
     <script src="main.js"></script>
 
