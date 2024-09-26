@@ -258,7 +258,6 @@ img {
 
 #about {
 
-
     &-a {
         .about-info {
             display: grid;
@@ -994,7 +993,7 @@ img {
                 color: white;
 
                 &:hover {
-                    background: $main-color
+                    background: gold
                 }
             }
         }
@@ -1005,9 +1004,16 @@ img {
 }
 
 @media (max-width:800px) {
+    #main-footer .social.py-1{
+        display: none;
+    }
+    
     .footer-content {
         text-align: center;
         margin: auto;
+        .container {
+            padding-top: 1rem;
+        }
     }
 
 }
