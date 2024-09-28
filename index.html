@@ -199,6 +199,7 @@ background: black;
     display: block;
 }
 
+
 @media only screen and (max-width: 950px){
     .contact-left{
         width: 100%;
@@ -289,7 +290,7 @@ background: black;
             <li><a href="about.html">Projects</a></li>
             <li><a href="contact.html">contact</a></li> -->
 
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="current">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#work-a">Projects</a></li>
             <li><a href="#contact">contact</a></li>
@@ -298,7 +299,7 @@ background: black;
         <div class="header-content">
           <h1 class="animated">Hi,Im Nabil Fannane</h1>
           <p class="leader">
-            <strong>I design & build user interfaces</strong>
+            <strong>I love building Front End layouts & beautiful user interfaces.</strong>
           </p>
           <!-- <a href="#work-a" class="btn-light">view my work</a> -->
           <a href="#work-a" class="test">view my work</a>
@@ -350,7 +351,8 @@ background: black;
       <div class="container">
         <h2 class="section-title">My work</h2>
         <div class="bottom-line"></div>
-        <div class="items py-3">
+
+        <!-- <div class="items py-3">
          
           <div class="item one">
             <div class="item-image">
@@ -537,10 +539,98 @@ background: black;
           </div>
 
         </div>
+ -->
+
+ <div id="portfolio" data-aos="fade-up">
+  <div class="container center" style="padding-bottom: 0; margin-bottom: 0;">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+          <div class="work">
+              <img src="https://images.pexels.com/photos/4691211/pexels-photo-4691211.jpeg?auto=compress&cs=tinysrgb&w=1600">
+              <div class="layer">
+                  <div>
+                     <a href="https://github.com/MzabiCoder/winerie" target="_blank">
+                     <i class="fab fa-github fa-3x"></i>
+                    </a>
+                  </div>
+                  <div>
+                      <a href="https://mzabicoder.github.io/winerie/" target="_blank">
+                      <i class="fas fa-eye fa-3x"></i>
+                     </a>
+                   </div>
+              </div>
+          </div>
+          <div class="work">
+              <img src="https://images.pexels.com/photos/2102934/pexels-photo-2102934.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+              <div class="layer">
+                  <div>
+                     <a href="https://github.com/MzabiCoder/ComptoirRestaurant" target="_blank">
+                     <i class="fab fa-github fa-3x"></i>
+                    </a>
+                  </div>
+                  <div>
+                      <a href="https://mzabicoder.github.io/ComptoirRestaurant/" target="_blank">
+                      <i class="fas fa-eye fa-3x"></i>
+                     </a>
+                   </div>
+              </div>
+          </div>
+          <div class="work">
+              <img src="https://images.pexels.com/photos/16666938/pexels-photo-16666938/free-photo-of-elegant-flatware-on-table-in-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1600">
+               <div class="layer">
+                  <div>
+                     <a href="https://github.com/MzabiCoder/reactProjec" target="_blank">
+                     <i class="fab fa-github fa-3x"></i>
+                    </a>
+                  </div>
+                  <div>
+                      <a href="http://MzabiCoder.github.io/reactProjec" target="_blank">
+                       <i class="fas fa-eye fa-3x"></i>
+                     </a>
+                   </div>
+              </div>
+          </div>
+          
+          <div class="work">
+              <img src="https://images.pexels.com/photos/3434523/pexels-photo-3434523.jpeg?auto=compress&cs=tinysrgb&w=1600">
+               <div class="layer">
+                  <div>
+                     <a href="https://github.com/MzabiCoder/mikisteakhouse_business" target="_blank">
+                     <i class="fab fa-github fa-3x"></i>
+                    </a>
+                  </div>
+                  <div>
+                      <a href="https://mzabicoder.github.io/mikisteakhouse_business/" target="_blank">
+                      <i class="fas fa-eye fa-3x"></i>
+                     </a>
+                   </div>
+              </div>
+          </div>
+          <div class="work">
+              <img src="https://images.pexels.com/photos/5632379/pexels-photo-5632379.jpeg?auto=compress&cs=tinysrgb&w=800">
+               <div class="layer">
+                  <div>
+                     <a href="https://github.com/MzabiCoder/MERNFinal" target="_blank">
+                     <i class="fab fa-github fa-3x"></i>
+                    </a>
+                  </div>
+                  <div>
+                      <a href="https://myshop-sl5l.onrender.com/" target="_blank">
+                      <i class="fas fa-eye fa-3x"></i>
+                     </a>
+                     <span class="style" style="font-size: 15px; color: white;">username:admin@email.com password:123456</span>
+                   </div>
+              </div>
+          </div>
+      </div>
+      <!-- <a href="#" class="btn">See more</a> -->
+  </div>
+</div>
+
       </div>
     </section>
 
-    <div id="contact">
+    <div id="contact" data-aos="fade-up">
       <div class="container center">
           <div class="row">
               <div class="contact-left">
@@ -550,7 +640,7 @@ background: black;
                   <div class="social-icons" style="margin-top: 15px; margin-bottom: 1rem;">
                        <a style="color: gold;" target="_blank" href="https://www.linkedin.com/in/nabil-fannane-34828741/"><i class="fab fa-linkedin"></i></a>
                   </div>
-                  <a href="img/NabilResumeNabil.pdf" style="padding: .5rem; font-weight: bold; font-size: 18px;"  download class="btn btn2">Download CV</a>
+                  <a href="img/NabilResumeNabil.pdf" class="btn btn2"  download class="btn btn2">Download CV</a>
               </div>
               <div class="contact-down">
                   <form method="post" action="post" name="submit-to-google-sheet">
@@ -614,6 +704,14 @@ background: black;
         document.querySelector(".loading").classList.add("fade");
       }, 4000);
       window.sr = ScrollReveal();
+
+      
+
+      sr.reveal("#portfolio", {
+        duration: 1700,
+        origin: "bottom",
+        distance: "700px",
+      });
 
       sr.reveal("#image", {
         duration: 1700,
