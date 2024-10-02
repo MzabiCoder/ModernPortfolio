@@ -130,26 +130,30 @@
     }
 
 
-#about{
-padding: 80px 0;
-color: #ababab;
-background: black;
-}
+  #about{
+  padding: 80px 0;
+  color: #ababab;
+  background: black;
+
+  }
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.about-col-1{
-    flex-basis: 35%;
-}
 .about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
+    width: auto;
+    height: auto;
+    align-self: center;
+  
 }
 .about-col-2{
     flex-basis: 60%;
+    /* background: red; */
+    align-self:flex-end;
+    padding-bottom: 3.5rem;
 }
 
 .sub-title{
@@ -197,6 +201,9 @@ background: black;
 }
 .tab-contents.active-tab{
     display: block;
+}
+.contact-left {
+  text-align: left;
 }
 
 
@@ -312,7 +319,7 @@ background: black;
       <div class="container">
           <div class="row">
               <div class="about-col-1" id="image">
-                  <img src="img/profile.jpeg" >
+                  <img src="img/profile.png" >
               </div>
               <div class="about-col-2" id="contet">
                   <div class="center">
