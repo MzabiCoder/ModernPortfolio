@@ -1,5 +1,5 @@
-// @import url('https://fonts.googleapis.com/css?family=Montserrat');
-// @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 @import 'config';
 @import 'tools';
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     background: #fff;
     height: 100%;
@@ -1153,16 +1153,19 @@ form .btn2{
    
 }
 .work{
-    border-radius: 10px;
+    // border-radius: 10px;
     position: relative;
     overflow: hidden;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    height: 500px;
  }
 .work img{
     width: 100%;
-    border-radius: 10px;
+    // border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: cover;
+    height: 100%;
 }
 .layer{
     width: 100%;
